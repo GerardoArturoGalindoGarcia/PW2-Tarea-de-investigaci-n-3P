@@ -10,28 +10,28 @@ export default function Navbar() {
                     href="/"
                     className="text-2xl font-bold text-blue-600"
                 >
-                    TechStore
+                    Tienda Electronica Next.js - Grupo#5
                 </Link>
 
                 {/* Menú */}
                 <div className="flex items-center gap-8">
                     <Link
                         href="/"
-                        className="hover:text-blue-600 transition"
+                        className="text-black hover:text-blue-600 transition"
                     >
                         Inicio
                     </Link>
 
                     <Link
                         href="/productos"
-                        className="hover:text-blue-600 transition"
+                        className="text-black hover:text-blue-600 transition"
                     >
                         Productos
                     </Link>
 
                     <Link
                         href="/carrito"
-                        className="hover:text-blue-600 transition"
+                        className="text-black hover:text-blue-600 transition"
                     >
                         Carrito
                     </Link>

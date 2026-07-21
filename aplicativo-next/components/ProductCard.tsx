@@ -14,7 +14,7 @@ export default function ProductCard({ id, nombre, precio, imagen }: ProductCardP
         <img src={imagen} alt={nombre} className="w-full h-56 object-cover" />
 
         <div className="p-5">
-          <h3 className="text-xl font-semibold">{nombre}</h3>
+          <h3 className="text-xl font-semibold text-black">{nombre}</h3>
 
           <p className="mt-2 text-blue-600 font-bold text-lg">L. {precio.toLocaleString()}</p>
 
