@@ -1,20 +1,21 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import { products } from "@/data/products";
+import { useMemo } from "react";
 import ProductDetailClient from "@/components/ProductDetailClient";
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
+export default function ProductDetailPageClient() {
+  const params = useParams();
+  const id = params?.id ?? "";
 
-export default function ProductDetail({ params }: Props) {
-  const producto = products.find((item) => item.id === Number(params.id));
+  const producto = useMemo(() => products.find((p) => p.id === Number(id)), [id]);
 
   if (!producto) {
     return (
       <div className="max-w-7xl mx-auto px-6 py-20">
         <h1 className="text-3xl font-bold">Producto no encontrado</h1>
-        <p className="mt-4 text-gray-600">id: {params?.id ?? '---'}</p>
+        <p className="mt-4 text-gray-600">id: {id || "---"}</p>
         <pre className="mt-2 text-xs text-gray-500">{JSON.stringify(params)}</pre>
       </div>
     );
