@@ -9,7 +9,7 @@ export default function FeaturedProducts() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {products.map((producto) => (
+                {products.slice(0, 3).map((producto) => (
                     <ProductCard
                         key={producto.id}
                         id={producto.id}
