@@ -20,7 +20,7 @@ export default function CartPage() {
               <img src={item.imagen} alt={item.nombre} className="w-32 h-24 object-cover rounded" />
 
               <div className="flex-1">
-                <h3 className="text-lg font-semibold">{item.nombre}</h3>
+                <h3 className="text-lg font-semibold text-gray-600">{item.nombre}</h3>
                 <p className="text-gray-600">Cantidad: {item.cantidad}</p>
                 <p className="text-blue-600 font-bold">L. {(item.precio * item.cantidad).toLocaleString()}</p>
               </div>
