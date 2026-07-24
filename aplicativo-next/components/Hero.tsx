@@ -10,8 +10,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-                    Encuentra computadoras, accesorios y dispositivos electrónicos
-                    seleccionados para este proyecto de demostración.
+                    Encuentra computadoras, accesorios y dispositivos electrónicos.
                 </p>
 
                 <Link
