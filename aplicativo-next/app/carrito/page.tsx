@@ -107,7 +107,7 @@ export default function CartPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs text-gray-400 mb-1">Código de Tarjeta (Demo)</label>
+                  <label className="block text-xs text-gray-400 mb-1">Código de Tarjeta </label>
                   <input 
                     type="text" 
                     name="nFicticio"
